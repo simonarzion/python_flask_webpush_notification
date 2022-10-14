@@ -2,8 +2,10 @@ import json, os
 
 from flask import request, Response, jsonify, render_template, Flask
 from pywebpush import webpush
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 PRIVATE_KEY_PATH = os.path.join(os.getcwd(), "private_key.txt")
 PUBLIC_KEY_PATH = os.path.join(os.getcwd(), "public_key.txt")
