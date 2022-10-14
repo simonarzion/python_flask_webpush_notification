@@ -28,7 +28,7 @@ def send_web_push(subscription_information, message_body):
                    data=message_body,
                    vapid_private_key=VAPID_PRIVATE_KEY,
                    vapid_claims={
-                       "sub": "mailto:develop@raturi.in",
+                       "sub": "mailto:kibarog214@haizail.com",
                        "aud": aud_url
                    })
 
